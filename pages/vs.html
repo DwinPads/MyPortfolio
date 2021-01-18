@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Darwin Padua</title>
+
+		<meta name="viewport" content="width=device-width, 	 initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/vs.css">
+		<link id="theme-style-page" rel="stylesheet" type="text/css" href=" ">
+	</head>
+	<body>
+		<section class="vs">
+			<div class="main-container">
+				<div class=greeting-wrapper>
+					<h1>Automatic Voting System</h1>
+				</div>
+					
+				<div class="vs-wrapper">
+					<div class="nav-wrapper">
+						<div class="dots-wrapper">
+							<div id="dot1" class="browser-dot"></div>
+							<div id="dot2" class="browser-dot"></div>
+							<div id="dot3" class="browser-dot"></div>
+						</div>
+
+						<ul id="navigation">
+							<li><a href="../index.html#Contact">Contact</a></li>
+						</ul>
+					</div>
+
+					<div class="video-column">
+						<div class="video-container">
+							<iframe src="https://drive.google.com/file/d/1bhJnCZtACB-tj7poYbTR4yoSg33nvbHa/preview" width="100%" height="360" style="border:0;" allowfullscreen="true" ></iframe>
+						</div>
+					</div>
+
+					<div class="nav-column">
+						<div id="myDIV" class="video-info">
+							  <a class="btn active" href="#about">About</a>
+							  <a class="btn" href="#cap">Capabilities</a>
+							  <a class="btn" href="#ver">Version</a>
+							  <a class="btn" href="#cred">Credentials</a>
+						</div>
+
+						<div class="container">
+							<div class="sections" id="about">
+								<p>
+									This is my first solo project. This system is used by CEDC (COMELEC EMPLOYEES DEVELOPMENT COOPERATIVE). This project is created September of 2017 and used March 23 2018.  
+								</p>
+
+								<p>
+									The system use a lan connection, it can accummulate data in real-time and create report after the voting or event. 
+								</p>  
+							</div>
+
+							<div class="sections" id="cap">
+							<p>
+								<SPAN class="items">Vote in any computer (Connected on the LAN)</SPAN> - you can vote in any computer because the system automatically segregates votes for each district.
+							</p>
+							<p>
+								<SPAN class="items">Can create report</SPAN> - the system can create report for every district votes and the over all votes.
+							</p>
+							</div>
+
+							<div class="sections" id="ver">
+							<p>
+								Version 0.2 Alpha
+							</p>
+							</div>
+
+							<div class="sections" id="cred">
+							<p>
+								<div >
+									<iframe id="pic" src="https://drive.google.com/file/d/1zypARjo_k4JeUNIBuUVzG_0iV-cWwO6Y/preview"> </iframe>
+								</div>
+							</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<br>
+		</section>
+
+		<script type="text/javascript" src="../js/nePage.js"></script>	
+		<script>
+			var header = document.getElementById("myDIV");
+			var btns = header.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+			  btns[i].addEventListener("click", function() {
+			  var current = document.getElementsByClassName("active");
+			  current[0].className = current[0].className.replace(" active", "");
+			  this.className += " active";
+			  });
+			}
+		</script>
+	</body>
+</html>
