@@ -23,7 +23,7 @@ document.getElementById("Page1").addEventListener("click", function(){
   	var win = window.open('pages/vs.html#about');
 });
 
-document.getElementById("Page1").addEventListener("click", function(){
+document.getElementById("Page2").addEventListener("click", function(){
   	var win = window.open('pages/ve.html');
 });
 
