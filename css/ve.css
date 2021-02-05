@@ -1,0 +1,31 @@
+.vid-Container{
+	margin-left: 4%;
+	text-align: center;
+}
+
+#title{
+	color:#fff;
+		font-size: 44px;
+	text-align: center;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 230px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 100%;
+  }
+}
